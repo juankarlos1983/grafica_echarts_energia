@@ -5768,3 +5768,5 @@ export let GENERATOR_MEASUREMENT_MINUTE = [
 ,{time:"23:56",value:0.19}
 ,{time:"23:58",value:1.13}
 ];
+
+console.log(GRID_MEASUREMENT_MINUTE.length)

@@ -10,19 +10,32 @@
     <link rel="stylesheet" href="style.css">
     <title>Energia solar</title>
 </head>
-<body style="background-color:hsl(120 100% 97.1%);">
-    <div id="medidas">
-        <label for="lang">Consumo de energia por tiempo</label><br><br>
-        <select id="energia" v-model="selected">
-            <option value="seleccion">Seleccione un opción</option>
-            <option value="0">Medida solar</option><!--SOLAR_MEASUREMENT_MINUTE-->
-            <option value="1">Medida nivel de bateria</option><!--BATTERY_LEVEL_MEASUREMENT_MINUTE-->
-            <option value="2">Medida potencia bateria</option><!--BATTERY_POWER_MEASUREMENT_MINUTE-->
-            <option value="3">Medida de Red</option><!--GRID_MEASUREMENT_MINUTE-->
-            <option value="4">medida del generador</option><!--GENERATOR_MEASUREMENT_MINUTE-->
-        </select><br><br>
+<body>
+    <div id="grafica" ></div>
+    <div id="tabla"></div>
+    <div id="opciones">
+    <p><strong><b>Agrupacion por horas</b></strong></p>
+        <input type="radio" name="grupo" value="1" id="1_hora">
+        <label for="1_hora">1 hora</label><br>
+    
+        <input type="radio" name="grupo" value="3" id="3_horas">
+        <label for="3_horas">3 horas</label><br>
+    
+        <input type="radio" name="grupo" value="6" id="6_horas">
+        <label for="6_horas">6 horas</label><br>
+    
+        <input type="radio" name="grupo" value="12" id="12_horas">
+        <label for="12_horas">12 horas</label><br><br>
+        <button id="accionar">Boton</button>
+
+        <select name="medidas" id="medida">
+            <option value="">--Escoja una opción--</option>
+            <option value="0">Medida solar</option>
+            <option value="1">Nivel de bateria</option>
+            <option value="2">Medida de potencia de la bateria</option>
+            <option value="3">Medición de red</option>
+            <option value="4">Medida del generador</option>
+          </select>
     </div>
-    <div id="main" style="width: 4000px;height:600px;"></div>
-    <div id="measurements"></div>
 </body>
 </html>

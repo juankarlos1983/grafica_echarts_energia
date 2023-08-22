@@ -1,3 +1,17 @@
-#main {
-    float: left;
+#grafica {
+    float: right;
+    width: 600px;
+    height:600px;
+}
+
+#tabla{
+    float:left;
+}
+
+#opciones{
+    justify-content: center;
+}
+
+body{
+    background-color:hsl(120 100% 97.1%);
 }
