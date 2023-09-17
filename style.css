@@ -1,3 +1,22 @@
-#main {
-    float: left;
+.container {
+    display: flex;
 }
+#app {
+    color: navy;
+    float:left;
+}
+
+#main {
+    float: right;
+    width: 600px;
+    height:400px;
+}
+
+table {
+    border: 1px solid #000;
+ }
+ th, td {
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+ }
